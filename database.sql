@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS marwan_contact CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE marwan_contact;
+
+CREATE TABLE IF NOT EXISTS messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  service VARCHAR(200),
+  message TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
